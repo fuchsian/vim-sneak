@@ -292,13 +292,13 @@ func! s:getnchars(n, mode)
   return s
 endf
 
-" 2-char sneak
-nnoremap <silent> <Plug>Sneak_s :<c-u>call sneak#wrap('', 2, 0, 2, 1)<cr>
-nnoremap <silent> <Plug>Sneak_S :<c-u>call sneak#wrap('', 2, 1, 2, 1)<cr>
-xnoremap <silent> <Plug>Sneak_s :<c-u>call sneak#wrap(visualmode(), 2, 0, 2, 1)<cr>
-xnoremap <silent> <Plug>Sneak_S :<c-u>call sneak#wrap(visualmode(), 2, 1, 2, 1)<cr>
-onoremap <silent> <Plug>Sneak_s :<c-u>call sneak#wrap(v:operator, 2, 0, 2, 1)<cr>
-onoremap <silent> <Plug>Sneak_S :<c-u>call sneak#wrap(v:operator, 2, 1, 2, 1)<cr>
+" 3-char sneak
+nnoremap <silent> <Plug>Sneak_s :<c-u>call sneak#wrap('', 3, 0, 2, 1)<cr>
+nnoremap <silent> <Plug>Sneak_S :<c-u>call sneak#wrap('', 3, 1, 2, 1)<cr>
+xnoremap <silent> <Plug>Sneak_s :<c-u>call sneak#wrap(visualmode(), 3, 0, 2, 1)<cr>
+xnoremap <silent> <Plug>Sneak_S :<c-u>call sneak#wrap(visualmode(), 3, 1, 2, 1)<cr>
+onoremap <silent> <Plug>Sneak_s :<c-u>call sneak#wrap(v:operator, 3, 0, 2, 1)<cr>
+onoremap <silent> <Plug>Sneak_S :<c-u>call sneak#wrap(v:operator, 3, 1, 2, 1)<cr>
 
 onoremap <silent> <Plug>SneakRepeat :<c-u>call sneak#wrap(v:operator, sneak#util#getc(), sneak#util#getc(), sneak#util#getc(), sneak#util#getc())<cr>
 
